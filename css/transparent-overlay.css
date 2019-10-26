@@ -1,0 +1,39 @@
+
+.imageOnHover{
+  width: 100px;
+  height: 300px;
+  display: inline-block;
+  background-size: cover;
+  border-radius: 4px;
+  margin: 10px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.imageOnHover > div ,.imageOnHover > h2{
+  position: absolute;
+  background-color: rgba(255,255,255,0.8);
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  border-radius: 4px;
+  padding: 8px;
+  overflow: hidden;
+  opacity: 0;
+  transition: .3s;
+}
+.imageOnHover:hover >h2 , .imageOnHover > input:checked + h2 +div{
+  bottom: 4px;
+  opacity: 1;
+}
+.imageOnHover > input:checked + h2{
+bottom: -20px;
+opacity: 0;
+
+}
+.imageOnHover > h2{
+  margin: 0;
+}
+.imageOnHover > input{
+  display: none;
+}
