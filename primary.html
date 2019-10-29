@@ -29,14 +29,43 @@
 
 
 }
+ .dropdown-submenu {
+                position: relative;
+            }
 
+            /*.dropdown-submenu> a:after {
+                content: ">";
+                float: right;
+            }*/
+
+            .dropdown-submenu>.dropdown-menu {
+                top: 0;
+                left: 100%;
+                margin-top: 0px;
+                margin-left: 0px;
+            }
+
+            .dropdown-submenu:hover>.dropdown-menu {
+                display: block;
+            }
+
+
+.image-opasity img {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.image-opasity img:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+}
     </style>
   </head>
   <body>
-  	<!--header-->
-  	<header >
-  	<nav class="navbar navbar-expand-lg navbar-dark   " id="header" style="background-color: #0e5061;">
-  		<div class="container">
+    <!--header-->
+    <header >
+    <nav class="navbar navbar-expand-lg navbar-dark   " id="header" style="background-color: #0e5061;">
+      <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="cn-toggle"><i class="fas fa-bars"></i></span>
   </button>
@@ -69,18 +98,15 @@
   <!---Nevigation-->
   <div class="cn-nav">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  	<div class="container">
+    <div class="container-fluid">
   <a href="index.html" class="navbar-brand"><img src="images/1.png" width="100px"  class="logo">&nbsp;&nbsp;&nbsp;</a>
-
-
-  
   </div>
 </nav>
 </div>
  <!---End Nevigation--> 
  <div>
  <nav class="navbar navbar-expand-lg navbar-light bg-dark  cn-stick-nav">
-  <div class="container ">
+  <div class="container-fluid ">
   
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -111,8 +137,35 @@
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
   <a class="dropdown-item" href="#">High Achievers</a>
           <a class="dropdown-item" href="#">History & Background</a>
-          <a class="dropdown-item" href="#">Event Calender</a>
-          <a class="dropdown-item" href="departments.html">Departments</a>   
+          <a class="dropdown-item" href="#">Event Calender</a>  
+          <!--<li class="dropdown-divider"></li>-->
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" tabindex="-1" href="departments.html">
+                                           <img src="images/drop.png" style="float: right; " >
+                                            Departments
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" tabindex="-1" href="hrm.html">HRM</a></li>
+                                           <!-- <li class="dropdown-submenu">
+                                                <a class="dropdown-item" href="#">
+                                                    level 2
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">3rd level</a></li>
+                                                    <li><a class="dropdown-item" href="#">3rd level</a></li>
+                                                </ul>
+                                            </li>-->
+                                            <li><a class="dropdown-item" href="ict.html">ICT</a></li>
+                                            <li><a class="dropdown-item" href="accounts.html">Accounts</a></li>
+                                             <li><a class="dropdown-item" href="admin.html">Admin</a></li>
+                                              <li><a class="dropdown-item" href="science.html">Science</a></li>
+                                               <li><a class="dropdown-item" href="urdu.html">Urdu</a></li>
+                                                <li><a class="dropdown-item" href="english.html">English</a></li>
+                                                 <li><a class="dropdown-item" href="math.html">Maths</a></li>
+                                                  <li><a class="dropdown-item" href="islamiat.html">Islamiat</a></li>
+                                                   <li><a class="dropdown-item" href="pak.html">Pak-Studies</a></li>
+                                        </ul>
+                                    </li>
   </div>
 </div>
 <div class="dropdown">
@@ -182,135 +235,94 @@
   </div>
 </nav>
 </div>
+ <!--banner-->
+</header>
  <div class="cn-nav">
   <nav class="navbar navbar-expand-lg navbar-light " style="background-color:  #0e5061; height: 100px;">
-    <div class="container">  
-      <h1 style="color: white;">Departments</h1>
+    <div class="container-fluid">  
+      <h1 style="color: white;">Junior Campus</h1>
   </div>
 </nav>
 </div>
 </header>
 <br>
-<main>
-<div class="container">
-<div class="row">
+<div class="container-fluid">
+  <p style="text-align: justify;"><span style="color: #000000;"><strong><a style="color: #000000;" href="https://www.millenniumschools.edu.pk">Roots Millennium Schools</a></strong> is the leading and one of the <strong>Best</strong> <strong>Primary School in Islamabad</strong>, Pakistan that&nbsp;offers International Primary Programmes. With a level of curriculum that is international and staff that is highly qualified, our aim is to support students in becoming competent learners, graduates and professional practitioners, improving the lives of individuals and communities. The 5 years primary school program is structured for children between the ages 6 to 10.</span></p>
+  <p style="text-align: justify;"><span style="color: #000000;">The MIPP has been developed by experts with subject leads from the Department of Qualifications, Curriculum and Assessments at Millennium Schools which are&nbsp;established on the same lines as the QCA department of the UK and Wales. The MIPP has been bench marked against international curricula. Subject wise curriculum are developed in house and are vertically and horizontally aligned.</span></p>
 
-                                    <div class="col-sm-3 col-md-3">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <a href="hrm.html"><img src="images/aziz.jpg" width="30%"></a>
-                                                <a href="hrm.html"><h5 class="card-title"><b>HRM</b></h5></a>
-                                                <p class="card-text">Content about HRM</p>
-                                          <a href="hrm.html"><button type="button" class="btn btn-default btn-sm">More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3 col-md-3">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <a href="ict.html"><img src="images/rizwan.jpg" width="30%"></a>
-                                                <a href="ict.html"><h5 class="card-title"><b>ICT</b></h5></a>
-                                                <p class="card-text">Content about ICT</p>
-                                                <a href="ict.html"><button type="button" class="btn btn-default btn-sm">More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                   <div class="col-sm-3 col-md-3">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <a href="accounts.html"><img src="images/safi.jpg" width="30%"></a>
-                                                <a href="accounts.html"><h5 class="card-title"><b>Accounts</b></h5></a>
-                                                <p class="card-text">Content about Accounts</p>
-                                               <a href="accounts.html"><button type="button" class="btn btn-default btn-sm">More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                   <div class="col-sm-3 col-md-3">
-                                        <div class="card">
-                                            <div class="card-body">
-                                              <a href="admin.html"><img src="images/sabra.png" width="30%"></a>
-                                                <a href="admin.html"><h5 class="card-title"><b>Admin</b></h5></a>
-                                                <p class="card-text">Content about Admin</p>
-                                                <a href="admin.html"><button type="button" class="btn btn-default btn-sm">More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="row">
+  <div class="row image-opasity">
+    <div class="col-md-2 ">
+    <img src="images/save1.jpg" alt="Forest" width="204" height="135">
+  </div>
+  <div class="col-md-2">
+ <img src="images/save2.jpg" alt="Forest" width="204" height="135">
+</div>
+<div class="col-md-2">
+ <img src="images/save3.jpg" alt="Forest" width="204" height="135">
+</div>
+<div class="col-md-2">
+    <img src="images/save4.jpg" alt="Forest"width="204" height="135">
+  </div>
+  <div class="col-md-2">
+ <img src="images/save5.jpg" alt="Forest" width="204" height="135">
+</div>
+<div class="col-md-2">
+ <img src="images/save6.jpg" alt="Forest" width="204" height="135">
+</div>
+</div>
+<br/>
 
-                                    <div class="col-sm-3 col-md-3">
-                                        <div class="card">
-                                            <div class="card-body">
-                                               <a href="science.html"> <img src="images/sirirfan.jpg" width="30%"></a>
-                                                <a href="science.html"><h5 class="card-title"><b>Science</b></h5></a>
-                                                <p class="card-text">Content about Science</p>
-                                              <a href="science.html"><button type="button" class="btn btn-default btn-sm">More</button>
-                                                <!--<a href="science.html" class="btn btn-warning">More</a>-->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3 col-md-3">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <a href="urdu.html"><img src="images/talib.png" width="30%"></a>
-                                                <a href="urdu.html"><h5 class="card-title"><b>Urdu</b></h5></a>
-                                                <p class="card-text">Content about Urdu</p>
-                                               <a href="urdu.html"><button type="button" class="btn btn-default btn-sm">More</button></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                   <div class="col-sm-3 col-md-3">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <a href="english.html"><img src="images/aziz.jpg" width="30%"></a>
-                                                <a href="english.html"><h5 class="card-title"><b>English</b></h5></a>
-                                                <p class="card-text">Content about English</p>
-                                               <a href="english.html"> <button type="button" class="btn btn-default btn-sm">More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                   <div class="col-sm-3 col-md-3">
-                                        <div class="card">
-                                            <div class="card-body">
-                                               <a href="math.html"> <img src="images/aziz.jpg" width="30%"></a>
-                                                <a href="math.html"><h5 class="card-title"><b>Maths</b></h5></a>
-                                                <p class="card-text">Content about Maths</p>
-                                               <a href="math.html"><button type="button" class="btn btn-default btn-sm">More</button></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="row">
+  <p style="text-align: justify;"><span style="color: #000000;">Appropriate and relevant internationally, Millennium Primary Programme has been designed to be culturally sensitive. Over the years, RMS has grown a reputation for its in house sheet system for years. Our worksheet system is meant to give maximum learning in minimum time. It includes top-quality teaching and assessment resources that are appropriate for teaching and learning. A child is given maximum exposure, locally and internationally as our curriculum is globally recognized. Teaching strategies and resources support and ensure an engaged learning environment which enhances the child’s knowledge, skills, attitude and values.</span></p>
+  <p style="text-align: justify;"><span style="color: #000000;">The suggested scheme of work helps to plan teaching. The basic framework covers all learning objectives in the primary curriculum framework, providing a suggested teaching order along with sample activities. Each stage is split into a number of units which are used as starting points for producing lesson plans. Activities are suggested to suit local circumstances and resources.</span></p>
+  <p style="text-align: justify;"><span style="color: #000000;">Millennium Primary Programme forms&nbsp;a part of International Education for students between 6 to 10 years, offering routes that candidates can follow from the post-kindergarten&nbsp;stage through to university entrance. A continued assessment system is followed from Grades 1 to 3. Grade 4 introduces monthly assessments to warm up and prepare the child for the tougher years ahead. Grade 5 introduces&nbsp;a proper, centralized examination system. Millennium provision also includes first-class support for teachers through publications, online resources, training, workshops and professional development which are later followed by teaching standards monitoring.</span></p>
+  <p style="text-align: justify;"><span style="color: #000000;">We try our best to stimulate the capability of children and achieve a dynamic state of development. Millennium International Primary Programme believes that learning beyond the classroom has aims to provide an environment where each child aspires for excellence.</span></p>
+</div>
+<br>
+<br/>
 
-                                    <div class="col-sm-3 col-md-3">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <a href="islamiat.html"><img src="images/aziz.jpg" width="30%"></a>
-                                                <a href="islamiat.html"><h5 class="card-title"><b>Islamiat</b></h5></a>
-                                                <p class="card-text">Content about Islamiat</p>
-                                                <a href="islamiat.html"><button type="button" class="btn btn-default btn-sm">More</button></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3 col-md-3">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <a href="pak.html"><img src="images/aziz.jpg" width="30%"></a>
-                                                <a href="pak.html"><h5 class="card-title"><b>Pak-Studies</b></h5></a>
-                                                <p class="card-text">Content about Pak-Studies</p>
-                                                 <a href="pak.html"><button type="button" class="btn btn-default btn-sm">More</button></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                              </div>
 
-                              </main>
-                                <br>
-                         <!--FOOTER--->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--FOOTER--->
 <footer class="cn-ftr">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row " >
         <div class="col-md-3"><div class="ftr-header"> <h5><span style="color:#fecb05; font-weight: 400;">Awards & Achievements</span></h5></div>
         <div class="ftr-des">
@@ -395,7 +407,7 @@
       </div>
     </div>
 
-    <div class="container-fluid bg-light btn-ftr text-center">
+    <div class="container-fluid bg-light btn-ftr ">
       <div class="row">
         <div class="col-md-6">SanaiSchoolSystem.com &copy; 2019</div>
         <div class="col-md-6">
@@ -421,31 +433,17 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/custom.js"></script>
     <script type="text/javascript">
-    // MDB Lightbox Init
-$(function () {
-$("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
-});
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    autoplay:true,
-    autoplayTimeout:1000,
     
-    
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
-        }
-    }
-})
 
-</script>      
+    $(".btn-group, .dropdown").hover(
+                        function () {
+                            $('>.dropdown-menu', this).stop(true, true).fadeIn("fast");
+                            $(this).addClass('open');
+                        },
+                        function () {
+                            $('>.dropdown-menu', this).stop(true, true).fadeOut("fast");
+                            $(this).removeClass('open');
+                        });
+</script>
   </body>
 </html>

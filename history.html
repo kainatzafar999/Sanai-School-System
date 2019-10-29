@@ -29,14 +29,43 @@
 
 
 }
+ .dropdown-submenu {
+                position: relative;
+            }
 
+            /*.dropdown-submenu> a:after {
+                content: ">";
+                float: right;
+            }*/
+
+            .dropdown-submenu>.dropdown-menu {
+                top: 0;
+                left: 100%;
+                margin-top: 0px;
+                margin-left: 0px;
+            }
+
+            .dropdown-submenu:hover>.dropdown-menu {
+                display: block;
+            }
+
+
+.image-opasity img {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.image-opasity img:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+}
     </style>
   </head>
   <body>
-  	<!--header-->
-  	<header >
-  	<nav class="navbar navbar-expand-lg navbar-dark   " id="header" style="background-color: #0e5061;">
-  		<div class="container">
+    <!--header-->
+    <header >
+    <nav class="navbar navbar-expand-lg navbar-dark   " id="header" style="background-color: #0e5061;">
+      <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="cn-toggle"><i class="fas fa-bars"></i></span>
   </button>
@@ -69,18 +98,15 @@
   <!---Nevigation-->
   <div class="cn-nav">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  	<div class="container">
+    <div class="container-fluid">
   <a href="index.html" class="navbar-brand"><img src="images/1.png" width="100px"  class="logo">&nbsp;&nbsp;&nbsp;</a>
-
-
-  
   </div>
 </nav>
 </div>
  <!---End Nevigation--> 
  <div>
  <nav class="navbar navbar-expand-lg navbar-light bg-dark  cn-stick-nav">
-  <div class="container ">
+  <div class="container-fluid ">
   
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -89,7 +115,7 @@
   <div class="collapse navbar-collapse " id="navbarSupportedContent" class="topnav" id="myTopnav">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link  " href="#">HOME</a>
+        <a class="nav-link  " href="index.html">HOME</a>
       </li>
       <div class="dropdown">
   <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -111,8 +137,35 @@
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
   <a class="dropdown-item" href="#">High Achievers</a>
           <a class="dropdown-item" href="#">History & Background</a>
-          <a class="dropdown-item" href="#">Event Calender</a>
-          <a class="dropdown-item" href="departments.html">Departments</a>   
+          <a class="dropdown-item" href="#">Event Calender</a>  
+          <!--<li class="dropdown-divider"></li>-->
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" tabindex="-1" href="departments.html">
+                                           <img src="images/drop.png" style="float: right; " >
+                                            Departments
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" tabindex="-1" href="hrm.html">HRM</a></li>
+                                           <!-- <li class="dropdown-submenu">
+                                                <a class="dropdown-item" href="#">
+                                                    level 2
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">3rd level</a></li>
+                                                    <li><a class="dropdown-item" href="#">3rd level</a></li>
+                                                </ul>
+                                            </li>-->
+                                            <li><a class="dropdown-item" href="ict.html">ICT</a></li>
+                                            <li><a class="dropdown-item" href="accounts.html">Accounts</a></li>
+                                             <li><a class="dropdown-item" href="admin.html">Admin</a></li>
+                                              <li><a class="dropdown-item" href="science.html">Science</a></li>
+                                               <li><a class="dropdown-item" href="urdu.html">Urdu</a></li>
+                                                <li><a class="dropdown-item" href="english.html">English</a></li>
+                                                 <li><a class="dropdown-item" href="math.html">Maths</a></li>
+                                                  <li><a class="dropdown-item" href="islamiat.html">Islamiat</a></li>
+                                                   <li><a class="dropdown-item" href="pak.html">Pak-Studies</a></li>
+                                        </ul>
+                                    </li>
   </div>
 </div>
 <div class="dropdown">
@@ -182,15 +235,27 @@
   </div>
 </nav>
 </div>
+ <!--banner-->
+</header>
  <div class="cn-nav">
   <nav class="navbar navbar-expand-lg navbar-light " style="background-color:  #0e5061; height: 100px;">
-    <div class="container">  
-      <h1 style="color: white;"> Institution Background & History</h1>
+    <div class="container-fluid">  
+      <h1 style="color: white;">Background & History</h1>
   </div>
 </nav>
 </div>
 </header>
 <br>
+<div class="container-fluid">
+<p style="text-align: justify;"><span style="font-size: 10pt;">As we reach 30 years of academic excellence – more than one quarter of a century, Sanai School System today is synonymous with academic excellence, student achievement, social entrepreneurship, learning opportunity and scholarship discovery for students, parents, teachers, alumni and the community as a whole. Students who study here are passionate about their subject choices, acquisition of life skills, qualifications and dedication to expanding their knowledge of the world around them. In the sphere of K-12 and tertiary education, RMS remains an institute that dares to be different. It is our academic rigor, service learning, portfolio building, collaboration and personal focus to each and every learner that makes us distinct.</span></p>
+<p style="text-align: justify;"><span style="font-size: 10pt;"><a href="https://www.millenniumschools.edu.pk"><strong>Sanai School System</strong></a> (RMS) is an <strong>ISO 9001:2008 certified group of International Schools</strong> registered and operating across Pakistan under the laws of Pakistan, with English as the medium of instruction for teaching, learning and assessments, additionally Urdu, Mandarin, German and French languages are taught as part of extended school and college curriculum and associated qualifications. We are a private Independent award winning school group providing teaching and learning for nearly 30 years, with the largest K-12 teacher training Institute, 5,000 plus active alumni, with an access to over 30 educational qualifications affiliated with prestigious 14 different examination &amp; qualification boards globally, with more than 15 school based academic enrichment and language programs, <strong>more than 100 active partnerships &amp; affiliations with industry, academia, corporate sector, social and non Profit sector, maintaining Linkages and MOU’s with over 500 Universities, Institutes of Higher education, partner organizations, governments globally, and more than 70 core</strong> and extended curriculums and subjects taught from Montessori to post-graduate level. From International Baccalaureate qualifications to University of London International degrees, from Cambridge Primary programmes to Pearson- Edexcel BTEC qualifications, we teach diversity and choice.</span></p>
+<p style="text-align: justify;"><span style="font-size: 10pt;">Roots Millennium Schools (RMS) has a growing presence in 20 major cities across Pakistan with more than 40 purposes-built state-of-the-art sustainable Campuses nationwide with an incessant increase in student number to nearly 17,000 plus students today. Sanai School System have achieved academic excellence and all round development of students for nearly 30 years.<strong> RMS is Pakistan’s first Confucius Classroom (CC)&nbsp; in collaboration with China Radio International</strong> <strong>CRI, Hanban Beijing and Confucius Institute Head Quarter, China with more than 7000 thousand students learning mandarin</strong> as a global currency for communication exchange, RMS is also a member of the prestigious German Pasch Schools network, where 1400 learners are learning German language from A1 to B1 in collaboration with Goethe Institute. <strong>RMS is Asia’s first Intel Education ICT Skills for Success SFS-curriculum school</strong> promoting Information communication technology ICT as a mandatory subject from Grade 1 to Grade 8 and has the largest teacher training &amp; professional development program under the award winning flagship of <strong><a href="http://www.rnitte.edu.pk">Roots National Institute of Teacher Training &amp; Education RNITTE</a>,</strong> which has trained and empowered more than <strong>6850 teacher</strong>s across <strong>public and private sector</strong> since its inception over two decades.</span></p>
+<p style="text-align: justify;"><span style="font-size: 10pt;"><strong>RMS is Pakistan’s first World Wide Fund WWF Green School</strong>; with an agreement with WWF Pakistan to promote all enrolled students nationwide as active and responsible citizens as green students thus promoting greener communities and climate change education for an eco-friendly much greener planet. RMS has also pledged to work towards the conservation of Snow leopard in Pakistan; therefore we have officially adopted the Snow leopard protection campaign in Pakistan as our school green slogan and have also become the first school system to have 100 percent student and schools registered as green students and schools. <strong>RMS is proud to be Pakistan’s first ‘Mentor school’ by Microsoft Education Worldwide,</strong> where in 2014, 2016 and 2017 <strong>RMS has been selected by Microsoft as one of 80 ‘Mentor Schools</strong>‘ from around the world and the only one in Pakistan, in recognition of our innovative teaching practices and student-centered approach. ‘Mentor Schools’ are recognized leaders to have achieved change within their own education systems.</span></p>
+<p style="text-align: justify;"><span style="font-size: 10pt;">RMS has a budding presence in almost all the major urban cities across Pakistan with state of the art purpose built eco-energy friendly campuses nationwide and with an incessant increase in student number to nearly 17,000 plus today together with thousands as active and accomplished alumni. Roots Millennium Schools has achieved academic excellence and all round development of students for nearly 30 years and has won the fastest 100 growing companies of Pakistan award and 500 Fastest growing companies of Arabia &amp; Gulf region by ‘All World Network USA’ founded by Harvard University trailblazing and distinguished Professors.</span></p>
+<p style="text-align: justify;"><span style="font-size: 10pt;">Roots Millennium Schools remains a place that dares to be a little different. It is our academic focus and personal attention to each and every learner that makes us distinct. For nearly three decades, we have sponsored educational change, opportunity, achievement, excellence and excitement across schools, communities, towns, cities through our learner centered education system. Roots Millennium Schools today is beyond education and schooling; it is changing the national education paradigm through its award winning curriculum, beyond the classroom teaching and learning initiatives, enhanced teaching &amp; learning programs, teacher training programs, qualifications, results, achievements, thus promoting social change and community re-engineering.</span></p>
+<p style="text-align: justify;"><span style="font-size: 10pt;">The foundations of our perspective at Roots Millennium Schools are the things we have always stood for celebrating, diversity, creativity, vitality &amp; excellence. The world is changing dramatically and the culture that make millennial’s different is now more relevant than ever before. Creativity has made millennial’s an innovator in so many fields, but we recognize that at the heart of our creative culture is the ability to thrive in a complex and ever changing classroom environment. For this we have set on sail to scale ‘Roots Millennium Schools’ to promote skills, values, knowledge, digital literacy, community service and active global citizenship thus sponsoring entrepreneurial opportunity for learners, teachers and communities through our core pedagogical values, awarding winning curriculum and teacher training eco systems.</span></p>
+<p style="text-align: justify;"><span style="font-size: 10pt;">We recognize the many benefits partnerships, collaborations and affiliations provide, such as enriching the curriculum and choice of programmes, and in terms of the widening learner participation and employability scope, thus facilitating entry into higher and territory education by increasing the number of progression routes and subject choices for our learners. Global collaborations and qualifications not only provide a diverse learning environment but also increase educational opportunity, enriches diversity and promote a mutually supportive learning ecosystem for staff, learners and the community, as well as raising the profile of both the provider and the partner in the education districts we serve here in Pakistan.</span></p>
+</div>
 
 
 
@@ -206,31 +271,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   <br>
-                         <!--FOOTER--->
+<!--FOOTER--->
 <footer class="cn-ftr">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row " >
         <div class="col-md-3"><div class="ftr-header"> <h5><span style="color:#fecb05; font-weight: 400;">Awards & Achievements</span></h5></div>
         <div class="ftr-des">
@@ -315,7 +358,7 @@
       </div>
     </div>
 
-    <div class="container-fluid bg-light btn-ftr text-center">
+    <div class="container-fluid bg-light btn-ftr ">
       <div class="row">
         <div class="col-md-6">SanaiSchoolSystem.com &copy; 2019</div>
         <div class="col-md-6">
@@ -340,5 +383,18 @@
     
     <script src="js/bootstrap.js"></script>
     <script src="js/custom.js"></script>
+    <script type="text/javascript">
+    
+
+    $(".btn-group, .dropdown").hover(
+                        function () {
+                            $('>.dropdown-menu', this).stop(true, true).fadeIn("fast");
+                            $(this).addClass('open');
+                        },
+                        function () {
+                            $('>.dropdown-menu', this).stop(true, true).fadeOut("fast");
+                            $(this).removeClass('open');
+                        });
+</script>
   </body>
 </html>
