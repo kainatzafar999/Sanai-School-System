@@ -29,14 +29,33 @@
 
 
 }
+ .dropdown-submenu {
+                position: relative;
+            }
+
+            /*.dropdown-submenu> a:after {
+                content: ">";
+                float: right;
+            }*/
+
+            .dropdown-submenu>.dropdown-menu {
+                top: 0;
+                left: 100%;
+                margin-top: 0px;
+                margin-left: 0px;
+            }
+
+            .dropdown-submenu:hover>.dropdown-menu {
+                display: block;
+            }
 
     </style>
   </head>
   <body>
-  	<!--header-->
-  	<header >
-  	<nav class="navbar navbar-expand-lg navbar-dark   " id="header" style="background-color: #0e5061;">
-  		<div class="container">
+    <!--header-->
+    <header >
+    <nav class="navbar navbar-expand-lg navbar-dark   " id="header" style="background-color: #0e5061;">
+      <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="cn-toggle"><i class="fas fa-bars"></i></span>
   </button>
@@ -69,18 +88,15 @@
   <!---Nevigation-->
   <div class="cn-nav">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  	<div class="container">
+    <div class="container-fluid">
   <a href="index.html" class="navbar-brand"><img src="images/1.png" width="100px"  class="logo">&nbsp;&nbsp;&nbsp;</a>
-
-
-  
   </div>
 </nav>
 </div>
  <!---End Nevigation--> 
  <div>
  <nav class="navbar navbar-expand-lg navbar-light bg-dark  cn-stick-nav">
-  <div class="container ">
+  <div class="container-fluid ">
   
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -89,7 +105,7 @@
   <div class="collapse navbar-collapse " id="navbarSupportedContent" class="topnav" id="myTopnav">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link  " href="#">HOME</a>
+        <a class="nav-link  " href="index.html">HOME</a>
       </li>
       <div class="dropdown">
   <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -110,9 +126,51 @@
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
   <a class="dropdown-item" href="#">High Achievers</a>
-          <a class="dropdown-item" href="#">History & Background</a>
-          <a class="dropdown-item" href="#">Event Calender</a>
-          <a class="dropdown-item" href="departments.html">Departments</a>   
+          <a class="dropdown-item" href="history.html">History & Background</a> 
+           
+
+          <!--<li class="dropdown-divider"></li>-->
+
+                                     <li class="dropdown-submenu ">
+                                        <a class="dropdown-item dropdown-toggle" tabindex="-1" href="departments.html">
+                                           <!--<img src="images/drop.png" style="float: right; " >-->
+                                          Departments
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                           <!-- <li class="dropdown-submenu">
+                                                <a class="dropdown-item" href="#">
+                                                    level 2
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">3rd level</a></li>
+                                                    <li><a class="dropdown-item" href="#">3rd level</a></li>
+                                                </ul>
+                                            </li>-->
+                                              <li class="dropdown-submenu ">
+                                        <a class="dropdown-item dropdown-toggle" tabindex="-1" href="departments.html">
+                                          Operations
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="hrm.html">HRM</a></li>
+                                            <li><a class="dropdown-item" href="it.html">IT</a></li>
+                                             <li><a class="dropdown-item" href="accounts.html">Accounts</a></li>
+                                              <li><a class="dropdown-item" href="admin.html">Admin</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" tabindex="-1" href="departments.html">
+                                            Aacademies 
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item" href="science.html">Science</a></li>
+                                               <li><a class="dropdown-item" href="urdu.html">Urdu</a></li>
+                                                <li><a class="dropdown-item" href="english.html">English</a></li>
+                                                 <li><a class="dropdown-item" href="math.html">Maths</a></li>
+                                                  <li><a class="dropdown-item" href="islamiat.html">Islamiat</a></li>
+                                                   <li><a class="dropdown-item" href="pak.html">Pak-Studies</a></li>
+                                        </ul>
+                                    </li>
   </div>
 </div>
 <div class="dropdown">
@@ -121,7 +179,7 @@
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
   <a class="dropdown-item" href="#">DayCare</a>
-          <a class="dropdown-item" href="#">Eurika</a>
+          <a class="dropdown-item" href="eurika.html">Eurika</a>
           <a class="dropdown-item" href="#">Teachers Traning</a>
           <a class="dropdown-item" href="#">Character Building</a>   
   </div>
@@ -131,13 +189,10 @@
     ADMISSION
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">How to Apply</a>
-          <a class="dropdown-item" href="#">Admission Policy</a>
-          <a class="dropdown-item" href="#">Fee Policy</a>
-          <a class="dropdown-item" href="#">Eligibility Policy</a>
+          <a class="dropdown-item" href="admission1.html">Admission Policy</a>
           <a class="dropdown-item" href="#">Code of Conduct</a> 
-          <a class="dropdown-item" href="#">Uniform</a>  
-          <a class="dropdown-item" href="#">Booklist</a>   
+          <a class="dropdown-item" href="uniform.html">Uniform</a>  
+          <a class="dropdown-item" href="#">Booklist</a> 
   </div>
 </div>
 <div class="dropdown">
@@ -146,9 +201,9 @@
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
    <a class="dropdown-item" href="#">Toadlers</a>
-          <a class="dropdown-item" href="#">Primary Years</a>
-          <a class="dropdown-item" href="#">Middle Years</a>
-          <a class="dropdown-item" href="#">Secondry Years</a>
+          <a class="dropdown-item" href="primary.html">Primary Years</a>
+          <a class="dropdown-item" href="middle.html">Middle Years</a>
+          <a class="dropdown-item" href="secondary.html">Secondry Years</a>
           <a class="dropdown-item" href="#">IT Certification</a>  
            <a class="dropdown-item" href="#">Teachers Traning Certification</a>
   </div>
@@ -184,53 +239,56 @@
 </div>
  <div class="cn-nav">
   <nav class="navbar navbar-expand-lg navbar-light " style="background-color:  #0e5061; height: 100px;">
-    <div class="container">  
-      <h1 style="color: white;"> Islamiat Departments</h1>
+    <div class="container-fluid"> 
+      <h1 style="color: white;">Islamiat</h1>
   </div>
 </nav>
 </div>
 </header>
 <br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!--Main Body-->
+  <div class="container-fluid">
+     <div class="row" style="margin-top: 10px;">
+    <div class="col-md-3  col-sm-6 col-lg-3">
+       <img src="images/maam1.jpg" width="250">
+     <h6> Ms Qurat-ul-Mubeen</h6>
+      <p>Head of Department(Islamiat) </p>
+    </div>
+    <div class="col-md-9 col-sm-6 col-lg-9" >
+      <h3 style="padding-left: 50px; color: #0e5061;font-weight: bold; ">Islamiat</h3>
+        <p style="padding-left: 50px;">Sanai School System aims to provide quality education of an international standard. We aim for excellence through quality management, quality training and quality teaching, bringing benefits to our students, the community and the wider world.</p>
+    </div>
+  </div>
+  <br/>
+  <div class="row">
+    <div class=" col-xs-3  col-sm-6 col-md-3 col-lg-3">
+      <img src="images/junior14.jpg" width="250">
+      <h6>Mr. Irfan Ullah Sanai</h6>
+      <p>Chairman</p>
+    </div>
+    <div class=" col-xs-3  col-sm-6 col-md-3 col-lg-3">
+      <img src="images/junior3.jpg" width="250">
+      <h6>Mrs. Shazia Sanai</h6>
+      <p>Director</p>
+    </div>
+    <div class=" col-xs-3  col-sm-6 col-md-3 col-lg-3">
+      <img src="images/junior4.jpg" width="250">
+    <h6>Mr Safi Ullah Sanai</h6>
+      <p>Director Operations</p>
+    </div>
+    <div class=" col-xs-3  col-sm-6 col-md-3 col-lg-3">
+      <img src="images/junior5.jpg" width="250">
+      <h6>Mr.Anwar Ali</h6>
+      <p>Vice Principal</p>
+    </div>
+  </div>
+</div>
+<!--End Main Body-->
    <br>
                          <!--FOOTER--->
+<!--FOOTER--->
 <footer class="cn-ftr">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row " >
         <div class="col-md-3"><div class="ftr-header"> <h5><span style="color:#fecb05; font-weight: 400;">Awards & Achievements</span></h5></div>
         <div class="ftr-des">
@@ -315,7 +373,7 @@
       </div>
     </div>
 
-    <div class="container-fluid bg-light btn-ftr text-center">
+    <div class="container-fluid bg-light btn-ftr ">
       <div class="row">
         <div class="col-md-6">SanaiSchoolSystem.com &copy; 2019</div>
         <div class="col-md-6">
@@ -341,31 +399,17 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/custom.js"></script>
     <script type="text/javascript">
-    // MDB Lightbox Init
-$(function () {
-$("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
-});
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    autoplay:true,
-    autoplayTimeout:1000,
     
-    
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
-        }
-    }
-})
 
-</script>      
+    $(".btn-group, .dropdown").hover(
+                        function () {
+                            $('>.dropdown-menu', this).stop(true, true).fadeIn("fast");
+                            $(this).addClass('open');
+                        },
+                        function () {
+                            $('>.dropdown-menu', this).stop(true, true).fadeOut("fast");
+                            $(this).removeClass('open');
+                        });
+</script>
   </body>
 </html>

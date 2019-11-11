@@ -29,6 +29,25 @@
 
 
 }
+ .dropdown-submenu {
+                position: relative;
+            }
+
+            /*.dropdown-submenu> a:after {
+                content: ">";
+                float: right;
+            }*/
+
+            .dropdown-submenu>.dropdown-menu {
+                top: 0;
+                left: 100%;
+                margin-top: 0px;
+                margin-left: 0px;
+            }
+
+            .dropdown-submenu:hover>.dropdown-menu {
+                display: block;
+            }
 
     </style>
   </head>
@@ -36,7 +55,7 @@
     <!--header-->
     <header >
     <nav class="navbar navbar-expand-lg navbar-dark   " id="header" style="background-color: #0e5061;">
-      <div class="container">
+      <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="cn-toggle"><i class="fas fa-bars"></i></span>
   </button>
@@ -66,21 +85,17 @@
 </nav>
  
   <!--End Header-->
-  <!---Nevigation-->
   <div class="cn-nav">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
+    <div class="container-fluid">
   <a href="index.html" class="navbar-brand"><img src="images/1.png" width="100px"  class="logo">&nbsp;&nbsp;&nbsp;</a>
-
-
-  
   </div>
 </nav>
 </div>
  <!---End Nevigation--> 
  <div>
  <nav class="navbar navbar-expand-lg navbar-light bg-dark  cn-stick-nav">
-  <div class="container ">
+  <div class="container-fluid ">
   
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -109,10 +124,52 @@
     ABOUT US
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-  <a class="dropdown-item" href="#">High Achievers</a>
-          <a class="dropdown-item" href="#">History & Background</a>
-          <a class="dropdown-item" href="#">Event Calender</a>
-          <a class="dropdown-item" href="departments.html">Departments</a>   
+  <a class="dropdown-item" href="high.html">High Achievers</a>
+          <a class="dropdown-item" href="history.html">History & Background</a> 
+            
+
+          <!--<li class="dropdown-divider"></li>-->
+
+                                     <li class="dropdown-submenu ">
+                                        <a class="dropdown-item dropdown-toggle" tabindex="-1" href="departments.html">
+                                           <!--<img src="images/drop.png" style="float: right; " >-->
+                                          Departments
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                           <!-- <li class="dropdown-submenu">
+                                                <a class="dropdown-item" href="#">
+                                                    level 2
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">3rd level</a></li>
+                                                    <li><a class="dropdown-item" href="#">3rd level</a></li>
+                                                </ul>
+                                            </li>-->
+                                              <li class="dropdown-submenu ">
+                                        <a class="dropdown-item dropdown-toggle" tabindex="-1" href="departments.html">
+                                          Operations
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                     <li><a class="dropdown-item" href="hrm.html">HRM</a></li>
+                                            <li><a class="dropdown-item" href="it.html">IT</a></li>
+                                             <li><a class="dropdown-item" href="accounts.html">Accounts</a></li>
+                                              <li><a class="dropdown-item" href="admin.html">Admin</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" tabindex="-1" href="departments.html">
+                                            Aacademies 
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item" href="science.html">Science</a></li>
+                                               <li><a class="dropdown-item" href="urdu.html">Urdu</a></li>
+                                                <li><a class="dropdown-item" href="english.html">English</a></li>
+                                                 <li><a class="dropdown-item" href="math.html">Maths</a></li>
+                                                  <li><a class="dropdown-item" href="islamiat.html">Islamiat</a></li>
+                                                   <li><a class="dropdown-item" href="pak.html">Pak-Studies</a></li>
+                                        </ul>
+                                    </li>
   </div>
 </div>
 <div class="dropdown">
@@ -120,8 +177,8 @@
      LIFE AT SANAI
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-  <a class="dropdown-item" href="#">DayCare</a>
-          <a class="dropdown-item" href="#">Eurika</a>
+  <a class="dropdown-item" href="daycare.html">DayCare</a>
+          <a class="dropdown-item" href="eurika.html">Eurika</a>
           <a class="dropdown-item" href="#">Teachers Traning</a>
           <a class="dropdown-item" href="#">Character Building</a>   
   </div>
@@ -131,12 +188,9 @@
     ADMISSION
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">How to Apply</a>
-          <a class="dropdown-item" href="#">Admission Policy</a>
-          <a class="dropdown-item" href="#">Fee Policy</a>
-          <a class="dropdown-item" href="#">Eligibility Policy</a>
+          <a class="dropdown-item" href="admission1.html">Admission Policy</a>
           <a class="dropdown-item" href="#">Code of Conduct</a> 
-          <a class="dropdown-item" href="#">Uniform</a>  
+          <a class="dropdown-item" href="uniform.html">Uniform</a>  
           <a class="dropdown-item" href="#">Booklist</a>   
   </div>
 </div>
@@ -146,9 +200,9 @@
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
    <a class="dropdown-item" href="#">Toadlers</a>
-          <a class="dropdown-item" href="#">Primary Years</a>
-          <a class="dropdown-item" href="#">Middle Years</a>
-          <a class="dropdown-item" href="#">Secondry Years</a>
+          <a class="dropdown-item" href="primary.html">Primary Years</a>
+          <a class="dropdown-item" href="middle.html">Middle Years</a>
+          <a class="dropdown-item" href="secondary.html">Secondry Years</a>
           <a class="dropdown-item" href="#">IT Certification</a>  
            <a class="dropdown-item" href="#">Teachers Traning Certification</a>
   </div>
@@ -175,7 +229,7 @@
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
   <a class="dropdown-item" href="#">contact</a>
-          <a class="dropdown-item" href="#">Alumni</a>
+          <a class="dropdown-item" href="alumni.html">Alumni</a>
   </div>
 </div>   
     </ul>
@@ -184,102 +238,59 @@
 </div>
  <div class="cn-nav">
   <nav class="navbar navbar-expand-lg navbar-light " style="background-color:  #0e5061; height: 100px;">
-    <div class="container">  
+    <div class="container-fluid"> 
       <h1 style="color: white;">Junior Campus</h1>
   </div>
 </nav>
 </div>
 </header>
-<br>
- <!---End Nevigation-->
+ <!---End Header-->
   <br/>
-<div class="container">
-     <div class="row">
+<div class="container-fluid">
+     <div class="row" style="margin-top: 10px;">
     <div class="col-md-3  col-sm-6 col-lg-3">
-      <img src="images/jonior.jpg" style="margin-left: 20px;"  width="298px"  class="img-thumbnail">
+      <img src="images/junior.jpg"   width="300" >
+       <h6>Mrs.Rohina Zahid Wain</h6>
+      <p>Principal</p>
     </div>
-     <div class="col-md-9 col-sm-6 col-lg-9" >  
-      <h3 style="padding-left: 100px;">Principal</h3>
-        <p style="padding-left: 100px;">Sanai School System aims to provide quality education of an international standard. We aim for excellence through quality management, quality training and quality teaching, bringing benefits to our students, the community and the wider world.</p>
+    <div class="col-md-9 col-sm-6 col-lg-9" >
+      <h3 style="padding-left: 50px; color: #0e5061;font-weight: bold; ">Principal</h3>
+        <p style="padding-left: 50px;">Sanai School System aims to provide quality education of an international standard. We aim for excellence through quality management, quality training and quality teaching, bringing benefits to our students, the community and the wider world.</p>
     </div>
   </div>
   <br/>
   <div class="row">
-    <div class=" col-xs-3  col-sm-6 col-md-3 col-lg-3"style="padding-left: 34px;">
-      <img src="images/15.jpg" width="200" height="200">
-      <h4>Mrs.Farah Sultan</h4>
-      <h6>Vice Principal</h6>
+    <div class=" col-xs-3  col-sm-6 col-md-2 col-lg-3">
+      <img src="images/Graphic22.jpg" width="250">
+      <h6>Mrs.Farha Sultan</h6>
+      <p>Vice Principal</p>
     </div>
-    <div class=" col-xs-3  col-sm-6 col-md-3 col-lg-3">
-      <img src="images/18.jpg" width="200" height="200">
-      <h4>Mrs.Farhat Javed</h4>
-      <h6>HOD English</h6>
+    <div class=" col-xs-3  col-sm-6 col-md-2 col-lg-3">
+      <img src="images/Graphic23.jpg" width="250">
+      <h6>Mrs Shagufta Haider</h6>
+      <p>Head of Department(Maths)</p>
     </div>
-    <div class=" col-xs-3  col-sm-6 col-md-3 col-lg-3">
-      <img src="images/19.jpg" width="200" height="200">
-    <h4>Mrs.Shagufta Qaiser</h4>
-      <h6>HOD Maths</h6>
+    <div class=" col-xs-3  col-sm-6 col-md-2 col-lg-3">
+      <img src="images/Graphic16.jpg" width="250">
+    <h6>Sabeeka Jalal</h6>
+      <p>Incharge Nursery</p>
     </div>
-    <div class=" col-xs-3  col-sm-6 col-md-3 col-lg-3">
-      <img src="images/14.jpg" width="200" height="200">
-      <h4>Mrs.Lubna Bukhari</h4>
-      <h6>Co-ordinator S.St</h6>
+    <div class=" col-xs-3  col-sm-6 col-md-2 col-lg-3">
+      <img src="images/Graphic25.jpg" width="250">
+      <h6>Mrs.Farzana Riaz</h6>
+      <p>Incharge Prep</p>
     </div>
-  </div>
-    <div class="row">
-    <div class=" col-xs-3  col-sm-6 col-md-3 col-lg-3"style="padding-left: 34px;">
-      <img src="images/20.jpg" width="200" height="200">
-     <h4>Mrs.Raffat Saeed</h4>
-      <h6>Co-ordinator Urdu</h6>
-    </div>
-    <div class="  col-xs-3 col-sm-6 col-md-3 col-lg-3">
-      <img src="images/21.jpg" width="200" height="200">
-     <h4>Mrs.Shabana Noor</h4>
-      <h6>Co-ordinator Sci</h6>
-    </div>
-    <div class="  col-xs-3   col-sm-6 col-md-3 col-lg-3">
-      <img src="images/22.jpg" width="200" height="200">
-      <h4>Mrs.Aisha Omer</h4>
-      <h6>Co-ordinator English</h6>
-    </div>
-    <div class=" col-xs-3  col-sm-6 col-md-3 col-lg-3">
-      <img src="images/23.jpg" width="200" height="200">
-      <h4>Mrs.Farzana Riaz</h4>
-      <h6>Co-ordinator English</h6>
+    <div class=" col-xs-3  col-sm-6 col-md-2 col-lg-3">
+      <img src="images/haleema.jpg" width="250" >
+     <h6>Mrs Haleema Sadia</h6>
+      <p>Incharge One Class</p>
     </div>
   </div>
   </div>
-
-
-
-
-
-
-
-
-
-
  <!--End Body-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- <!--FOOTER--->
+<!--FOOTER--->
 <footer class="cn-ftr">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row " >
         <div class="col-md-3"><div class="ftr-header"> <h5><span style="color:#fecb05; font-weight: 400;">Awards & Achievements</span></h5></div>
         <div class="ftr-des">
@@ -364,7 +375,7 @@
       </div>
     </div>
 
-    <div class="container-fluid bg-light btn-ftr text-center">
+    <div class="container-fluid bg-light btn-ftr ">
       <div class="row">
         <div class="col-md-6">SanaiSchoolSystem.com &copy; 2019</div>
         <div class="col-md-6">
@@ -379,7 +390,7 @@
   </footer>
 
   <!--End FOOTER-->
-   <!-- jQuery then Bootstrap JS -->
+    <!-- jQuery then Bootstrap JS -->
     <script src="js/jquery-3.2.1.slim.min.js"></script>
      <script src="js/wow.min.js"></script>
               <script>
@@ -389,6 +400,18 @@
     
     <script src="js/bootstrap.js"></script>
     <script src="js/custom.js"></script>
+    <script type="text/javascript">
     
+
+    $(".btn-group, .dropdown").hover(
+                        function () {
+                            $('>.dropdown-menu', this).stop(true, true).fadeIn("fast");
+                            $(this).addClass('open');
+                        },
+                        function () {
+                            $('>.dropdown-menu', this).stop(true, true).fadeOut("fast");
+                            $(this).removeClass('open');
+                        });
+</script>
   </body>
 </html>

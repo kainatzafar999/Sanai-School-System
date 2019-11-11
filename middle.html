@@ -48,6 +48,16 @@
             .dropdown-submenu:hover>.dropdown-menu {
                 display: block;
             }
+            .image-opasity img {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.image-opasity img:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
     </style>
   </head>
   <body>
@@ -84,7 +94,7 @@
 </nav>
  
   <!--End Header-->
-  <!---Nevigation-->
+ <!---Nevigation-->
   <div class="cn-nav">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
@@ -124,17 +134,18 @@
     ABOUT US
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-  <a class="dropdown-item" href="#">High Achievers</a>
-          <a class="dropdown-item" href="#">History & Background</a>
-          <a class="dropdown-item" href="#">Event Calender</a>  
+  <a class="dropdown-item" href="high.html">High Achievers</a>
+          <a class="dropdown-item" href="history.html">History & Background</a> 
+        
+
           <!--<li class="dropdown-divider"></li>-->
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item" tabindex="-1" href="departments.html">
-                                           <img src="images/drop.png" style="float: right; " >
-                                            Departments
+
+                                     <li class="dropdown-submenu ">
+                                        <a class="dropdown-item dropdown-toggle" tabindex="-1" href="departments.html">
+                                           <!--<img src="images/drop.png" style="float: right; " >-->
+                                          Departments
                                         </a>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" tabindex="-1" href="hrm.html">HRM</a></li>
                                            <!-- <li class="dropdown-submenu">
                                                 <a class="dropdown-item" href="#">
                                                     level 2
@@ -144,9 +155,23 @@
                                                     <li><a class="dropdown-item" href="#">3rd level</a></li>
                                                 </ul>
                                             </li>-->
-                                            <li><a class="dropdown-item" href="ict.html">ICT</a></li>
-                                            <li><a class="dropdown-item" href="accounts.html">Accounts</a></li>
-                                             <li><a class="dropdown-item" href="admin.html">Admin</a></li>
+                                              <li class="dropdown-submenu ">
+                                        <a class="dropdown-item dropdown-toggle" tabindex="-1" href="departments.html">
+                                          Operations
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                     <li><a class="dropdown-item" href="hrm.html">HRM</a></li>
+                                            <li><a class="dropdown-item" href="it.html">IT</a></li>
+                                             <li><a class="dropdown-item" href="accounts.html">Accounts</a></li>
+                                              <li><a class="dropdown-item" href="admin.html">Admin</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" tabindex="-1" href="departments.html">
+                                            Aacademies 
+                                        </a>
+                                        <ul class="dropdown-menu">
                                               <li><a class="dropdown-item" href="science.html">Science</a></li>
                                                <li><a class="dropdown-item" href="urdu.html">Urdu</a></li>
                                                 <li><a class="dropdown-item" href="english.html">English</a></li>
@@ -163,7 +188,7 @@
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
   <a class="dropdown-item" href="#">DayCare</a>
-          <a class="dropdown-item" href="#">Eurika</a>
+          <a class="dropdown-item" href="eurika.html">Eurika</a>
           <a class="dropdown-item" href="#">Teachers Traning</a>
           <a class="dropdown-item" href="#">Character Building</a>   
   </div>
@@ -173,13 +198,10 @@
     ADMISSION
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">How to Apply</a>
-          <a class="dropdown-item" href="#">Admission Policy</a>
-          <a class="dropdown-item" href="#">Fee Policy</a>
-          <a class="dropdown-item" href="#">Eligibility Policy</a>
+          <a class="dropdown-item" href="admission1.html">Admission Policy</a>
           <a class="dropdown-item" href="#">Code of Conduct</a> 
-          <a class="dropdown-item" href="#">Uniform</a>  
-          <a class="dropdown-item" href="#">Booklist</a>   
+          <a class="dropdown-item" href="uniform.html">Uniform</a>  
+          <a class="dropdown-item" href="#">Booklist</a> 
   </div>
 </div>
 <div class="dropdown">
@@ -188,9 +210,9 @@
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
    <a class="dropdown-item" href="#">Toadlers</a>
-          <a class="dropdown-item" href="#">Primary Years</a>
-          <a class="dropdown-item" href="#">Middle Years</a>
-          <a class="dropdown-item" href="#">Secondry Years</a>
+          <a class="dropdown-item" href="primary.html">Primary Years</a>
+          <a class="dropdown-item" href="middle.html">Middle Years</a>
+          <a class="dropdown-item" href="secondary.html">Secondry Years</a>
           <a class="dropdown-item" href="#">IT Certification</a>  
            <a class="dropdown-item" href="#">Teachers Traning Certification</a>
   </div>
@@ -217,18 +239,17 @@
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
   <a class="dropdown-item" href="#">contact</a>
-          <a class="dropdown-item" href="#">Alumni</a>
+          <a class="dropdown-item" href="alumni">Alumni</a>
   </div>
 </div>   
     </ul>
   </div>
 </nav>
 </div>
- <!--banner-->
-</header>
+ 
  <div class="cn-nav">
   <nav class="navbar navbar-expand-lg navbar-light " style="background-color:  #0e5061; height: 100px;">
-    <div class="container-fluid">  
+    <div class="container-fluid"> 
       <h1 style="color: white;">The Sanai Middle Years</h1>
   </div>
 </nav>

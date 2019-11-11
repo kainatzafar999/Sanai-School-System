@@ -14,6 +14,8 @@
       <link rel="stylesheet" type="text/css" href="css/animate.min.css">
       <link rel="stylesheet" type="text/css" href="css/transparent-overlay.css">
       <link rel="stylesheet" type="text/css" href="css/media.css">
+      <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
     <title>SanaiSchoolSyatem</title>
      <style type="text/css">
       .dropdown:hover>.dropdown-menu {
@@ -63,6 +65,7 @@
   </head>
   <body>
     <!--header-->
+    <!--header-->
     <header >
     <nav class="navbar navbar-expand-lg navbar-dark   " id="header" style="background-color: #0e5061;">
       <div class="container-fluid">
@@ -103,6 +106,7 @@
   </div>
 </nav>
 </div>
+
  <!---End Nevigation--> 
  <div>
  <nav class="navbar navbar-expand-lg navbar-light bg-dark  cn-stick-nav">
@@ -135,17 +139,16 @@
     ABOUT US
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-  <a class="dropdown-item" href="#">High Achievers</a>
-          <a class="dropdown-item" href="#">History & Background</a>
-          <a class="dropdown-item" href="#">Event Calender</a>  
+  <a class="dropdown-item" href="high.html">High Achievers</a>
+          <a class="dropdown-item" href="history.html">History & Background</a>  
+
           <!--<li class="dropdown-divider"></li>-->
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item" tabindex="-1" href="departments.html">
-                                           <img src="images/drop.png" style="float: right; " >
-                                            Departments
+  <li class="dropdown-submenu ">
+                                        <a class="dropdown-item dropdown-toggle" tabindex="-1" href="departments.html">
+                                           <!--<img src="images/drop.png" style="float: right; " >-->
+                                          Departments
                                         </a>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" tabindex="-1" href="hrm.html">HRM</a></li>
                                            <!-- <li class="dropdown-submenu">
                                                 <a class="dropdown-item" href="#">
                                                     level 2
@@ -155,9 +158,23 @@
                                                     <li><a class="dropdown-item" href="#">3rd level</a></li>
                                                 </ul>
                                             </li>-->
-                                            <li><a class="dropdown-item" href="ict.html">ICT</a></li>
-                                            <li><a class="dropdown-item" href="accounts.html">Accounts</a></li>
-                                             <li><a class="dropdown-item" href="admin.html">Admin</a></li>
+                                              <li class="dropdown-submenu ">
+                                        <a class="dropdown-item dropdown-toggle" tabindex="-1" href="departments.html">
+                                          Operations
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                     <li><a class="dropdown-item" href="hrm.html">HRM</a></li>
+                                            <li><a class="dropdown-item" href="it.html">IT</a></li>
+                                             <li><a class="dropdown-item" href="accounts.html">Accounts</a></li>
+                                              <li><a class="dropdown-item" href="admin.html">Admin</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" tabindex="-1" href="departments.html">
+                                            Aacademies 
+                                        </a>
+                                        <ul class="dropdown-menu">
                                               <li><a class="dropdown-item" href="science.html">Science</a></li>
                                                <li><a class="dropdown-item" href="urdu.html">Urdu</a></li>
                                                 <li><a class="dropdown-item" href="english.html">English</a></li>
@@ -173,8 +190,8 @@
      LIFE AT SANAI
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-  <a class="dropdown-item" href="#">DayCare</a>
-          <a class="dropdown-item" href="#">Eurika</a>
+  <a class="dropdown-item" href="daycare.html">DayCare</a>
+          <a class="dropdown-item" href="eurika.html">Eurika</a>
           <a class="dropdown-item" href="#">Teachers Traning</a>
           <a class="dropdown-item" href="#">Character Building</a>   
   </div>
@@ -184,12 +201,9 @@
     ADMISSION
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">How to Apply</a>
-          <a class="dropdown-item" href="#">Admission Policy</a>
-          <a class="dropdown-item" href="#">Fee Policy</a>
-          <a class="dropdown-item" href="#">Eligibility Policy</a>
+          <a class="dropdown-item" href="admission1.html">Admission Policy</a>
           <a class="dropdown-item" href="#">Code of Conduct</a> 
-          <a class="dropdown-item" href="#">Uniform</a>  
+          <a class="dropdown-item" href="uniform.html">Uniform</a>  
           <a class="dropdown-item" href="#">Booklist</a>   
   </div>
 </div>
@@ -199,9 +213,9 @@
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
    <a class="dropdown-item" href="#">Toadlers</a>
-          <a class="dropdown-item" href="#">Primary Years</a>
-          <a class="dropdown-item" href="#">Middle Years</a>
-          <a class="dropdown-item" href="#">Secondry Years</a>
+          <a class="dropdown-item" href="primary.html">Primary Years</a>
+          <a class="dropdown-item" href="middle.html">Middle Years</a>
+          <a class="dropdown-item" href="secondary.html">Secondry Years</a>
           <a class="dropdown-item" href="#">IT Certification</a>  
            <a class="dropdown-item" href="#">Teachers Traning Certification</a>
   </div>
@@ -228,19 +242,17 @@
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
   <a class="dropdown-item" href="#">contact</a>
-          <a class="dropdown-item" href="#">Alumni</a>
+          <a class="dropdown-item" href="alumni.html">Alumni</a>
   </div>
 </div>   
     </ul>
   </div>
 </nav>
 </div>
- <!--banner-->
-</header>
- <div class="cn-nav">
+<div class="cn-nav">
   <nav class="navbar navbar-expand-lg navbar-light " style="background-color:  #0e5061; height: 100px;">
-    <div class="container-fluid">  
-      <h1 style="color: white;">Background & History</h1>
+    <div class="container-fluid"> 
+      <h1 style="color: white;">History & Background</h1>
   </div>
 </nav>
 </div>
@@ -249,6 +261,44 @@
 <div class="container-fluid">
 <p style="text-align: justify;"><span style="font-size: 10pt;">As we reach 30 years of academic excellence – more than one quarter of a century, Sanai School System today is synonymous with academic excellence, student achievement, social entrepreneurship, learning opportunity and scholarship discovery for students, parents, teachers, alumni and the community as a whole. Students who study here are passionate about their subject choices, acquisition of life skills, qualifications and dedication to expanding their knowledge of the world around them. In the sphere of K-12 and tertiary education, RMS remains an institute that dares to be different. It is our academic rigor, service learning, portfolio building, collaboration and personal focus to each and every learner that makes us distinct.</span></p>
 <p style="text-align: justify;"><span style="font-size: 10pt;"><a href="https://www.millenniumschools.edu.pk"><strong>Sanai School System</strong></a> (RMS) is an <strong>ISO 9001:2008 certified group of International Schools</strong> registered and operating across Pakistan under the laws of Pakistan, with English as the medium of instruction for teaching, learning and assessments, additionally Urdu, Mandarin, German and French languages are taught as part of extended school and college curriculum and associated qualifications. We are a private Independent award winning school group providing teaching and learning for nearly 30 years, with the largest K-12 teacher training Institute, 5,000 plus active alumni, with an access to over 30 educational qualifications affiliated with prestigious 14 different examination &amp; qualification boards globally, with more than 15 school based academic enrichment and language programs, <strong>more than 100 active partnerships &amp; affiliations with industry, academia, corporate sector, social and non Profit sector, maintaining Linkages and MOU’s with over 500 Universities, Institutes of Higher education, partner organizations, governments globally, and more than 70 core</strong> and extended curriculums and subjects taught from Montessori to post-graduate level. From International Baccalaureate qualifications to University of London International degrees, from Cambridge Primary programmes to Pearson- Edexcel BTEC qualifications, we teach diversity and choice.</span></p>
+
+  <!--<div class="row image-opasity">
+    <div class="col-md-2 ">
+    <img src="images/70.png" alt="Forest" width="204" height="135">
+  </div>
+  <div class="col-md-2">
+ <img src="images/71.png" alt="Forest" width="204" height="135">
+</div>
+<div class="col-md-2">
+ <img src="images/72.png" alt="Forest" width="204" height="135">
+</div>
+<div class="col-md-2">
+    <img src="images/73.png" alt="Forest"width="204" height="135">
+  </div>
+  <div class="col-md-2">
+ <img src="images/74.png" alt="Forest" width="204" height="135">
+</div>
+<div class="col-md-2">
+ <img src="images/75.png" alt="Forest" width="204" height="135">
+</div>
+</div>-->
+<div class="wrapper">
+    <div class="owl-carousel owl-theme">
+    <div class="item"><img class="img-fluid" src="images/70.png" ></div>
+    <div class="item"><img class="img-fluid" src="images/71.png" ></div>
+    <div class="item"><img class="img-fluid" src="images/72.png" ></div>
+    <div class="item"><img class="img-fluid" src="images/73.png" ></div>
+    <div class="item"><img class="img-fluid" src="images/74.png" ></div>
+    <div class="item"><img class="img-fluid" src="images/75.png" ></div>
+    <div class="item"><img class="img-fluid" src="images/70.png" ></div>
+    <div class="item"><img class="img-fluid" src="images/71.png" ></div>
+    <div class="item"><img class="img-fluid" src="images/72.png" ></div>
+    <div class="item"><img class="img-fluid" src="images/73.png" ></div>
+    <div class="item"><img class="img-fluid" src="images/74.png" ></div>
+    <div class="item"><img class="img-fluid" src="images/75.png" ></div>
+</div>
+
+  </div>
 <p style="text-align: justify;"><span style="font-size: 10pt;">Roots Millennium Schools (RMS) has a growing presence in 20 major cities across Pakistan with more than 40 purposes-built state-of-the-art sustainable Campuses nationwide with an incessant increase in student number to nearly 17,000 plus students today. Sanai School System have achieved academic excellence and all round development of students for nearly 30 years.<strong> RMS is Pakistan’s first Confucius Classroom (CC)&nbsp; in collaboration with China Radio International</strong> <strong>CRI, Hanban Beijing and Confucius Institute Head Quarter, China with more than 7000 thousand students learning mandarin</strong> as a global currency for communication exchange, RMS is also a member of the prestigious German Pasch Schools network, where 1400 learners are learning German language from A1 to B1 in collaboration with Goethe Institute. <strong>RMS is Asia’s first Intel Education ICT Skills for Success SFS-curriculum school</strong> promoting Information communication technology ICT as a mandatory subject from Grade 1 to Grade 8 and has the largest teacher training &amp; professional development program under the award winning flagship of <strong><a href="http://www.rnitte.edu.pk">Roots National Institute of Teacher Training &amp; Education RNITTE</a>,</strong> which has trained and empowered more than <strong>6850 teacher</strong>s across <strong>public and private sector</strong> since its inception over two decades.</span></p>
 <p style="text-align: justify;"><span style="font-size: 10pt;"><strong>RMS is Pakistan’s first World Wide Fund WWF Green School</strong>; with an agreement with WWF Pakistan to promote all enrolled students nationwide as active and responsible citizens as green students thus promoting greener communities and climate change education for an eco-friendly much greener planet. RMS has also pledged to work towards the conservation of Snow leopard in Pakistan; therefore we have officially adopted the Snow leopard protection campaign in Pakistan as our school green slogan and have also become the first school system to have 100 percent student and schools registered as green students and schools. <strong>RMS is proud to be Pakistan’s first ‘Mentor school’ by Microsoft Education Worldwide,</strong> where in 2014, 2016 and 2017 <strong>RMS has been selected by Microsoft as one of 80 ‘Mentor Schools</strong>‘ from around the world and the only one in Pakistan, in recognition of our innovative teaching practices and student-centered approach. ‘Mentor Schools’ are recognized leaders to have achieved change within their own education systems.</span></p>
 <p style="text-align: justify;"><span style="font-size: 10pt;">RMS has a budding presence in almost all the major urban cities across Pakistan with state of the art purpose built eco-energy friendly campuses nationwide and with an incessant increase in student number to nearly 17,000 plus today together with thousands as active and accomplished alumni. Roots Millennium Schools has achieved academic excellence and all round development of students for nearly 30 years and has won the fastest 100 growing companies of Pakistan award and 500 Fastest growing companies of Arabia &amp; Gulf region by ‘All World Network USA’ founded by Harvard University trailblazing and distinguished Professors.</span></p>
@@ -383,6 +433,26 @@
     
     <script src="js/bootstrap.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script >
+      $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    autoplay:1000,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+    </script>
     <script type="text/javascript">
     
 
